@@ -43,7 +43,7 @@ objdump -M intel -d /opt/protostar/bin/stack3 | grep '<win>'
 2. Variables
 `mov DWORD PTR [esp+0x5c],0x0` : Assign Local Variable `[esp+0x5c]` at to 0  
 3. Function Calls
-- `call 0x08048330 gets@plt` call to function `gets` Oh there the function what i think it used for you prompt input XD
+- `call 0x08048330 gets@plt` call to function `gets` Oh there the function what i think it used for prompt input XD
 - `call   8048350 <printf@plt>` call to function `print`
 - `call eax`  call to function address at eax`
 4. Conditional Check
@@ -84,7 +84,7 @@ print(fuzz+esp_plus_5c)
 ```
 - now esp+0x5c will contain `0x08048424` which is  address of win function and it will moved later to `eax` then our program call `eax` which call function pointer `win` 
 
-- and when run program with our script output as strin for program ,  function `win` will be called ! 
+- and when run program with our script output as stdin for program ,  function `win` will be called ! 
 
 ![Stack3 Solved](/assets/img/protostar/stack3-solved.png)
 
