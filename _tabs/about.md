@@ -4,5 +4,22 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+I'm Sysc4ll3r, your friendly neighborhood penetration tester, reverse engineer, and exploit developer. I've taken so many trips into the realm of syscalls that my coffee maker now hides in the kitchen corner, praying for mercy XD.
+
+## Summary For My Life 
+```nasm
+_start:
+call wakeup
+call pwn
+call sleep
+jmp _start
+```
+## Contact
+
+Feel free to reach out to me via [contact-me@sysc4ll3r.anonaddy.me](mailto:contact-me@sysc4ll3r.anonaddy.me) for collaboration, questions, or discussions related to cybersecurity and software security.
+
+Connect with me on:
+
+- [Twitter](https://twitter.com/sysc4ll3r)
+- [GitHub](https://github.com/Sysc4ll3r)
+- [Discord](https://discord.com/users/sysc4ll3r)
