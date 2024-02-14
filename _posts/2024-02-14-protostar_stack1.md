@@ -111,7 +111,7 @@ disassemble main
 
 now let,s breakpoint at `0x080484a7 <main+67>:	mov   eax,DWORD PTR [esp+0x5c]` to examine value at pointer `esp+0x5c` 
 ```sh
-breakpoint *0x080484a7
+break *0x080484a7
 ```
 
 now let,s run our program `stack1` with argument that contain our fuzzing value
