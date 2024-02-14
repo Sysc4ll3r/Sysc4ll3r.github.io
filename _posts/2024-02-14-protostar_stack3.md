@@ -6,9 +6,9 @@ tags: [protostar, binary-exploitation, stack3]
 ---
 
 # Conquering Stack3 at Protostar Machine
-Hello Hackers ! , Today is the day I continue on my journey to conquer the [Stack3](https://exploit.education/protostar/stack-three/) binary. on [Protostar](https://exploit.education/protostar) machine.
+Hello  , Today is the day I continue on my journey to solve the [Stack3](https://exploit.education/protostar/stack-three/) binary. on [Protostar](https://exploit.education/protostar) machine.
 
-This challenge requiring us to Redirect Execution to call function called `win` defined in the code useing through exploitation of stack-bufferoverflow.
+This challenge requiring us to Redirect Execution to call function called `win` defined in the code useing through exploitation of stack based bufferoverflow.
 
 ## **Challenge Overview**
 - **Challenge Name:** [Stack3](https://exploit.education/protostar/stack-three/)
@@ -50,8 +50,8 @@ objdump -M intel -d /opt/protostar/bin/stack3 | grep '<win>'
 - `cmp    DWORD PTR [esp+0x5c],0x0` if local variable at `[esp+0x5c]` still equal 0
 - `je     8048477 <main+0x3f>` then `jmp` to `0x08048477` which is the end of fucnction and return 
 
-5. Function Pointer : asseign address of `[esp+0x5c]` if it wasn,t zero to `eax` and then call `eax`
-- `mov    eax,DWORD PTR [esp+0x5c]` Move function pointer to `eax`
+5. Function Pointer : assiegn address of `[esp+0x5c]` if it wasn,t zero to `eax` and then call `eax`
+- `mov    eax,DWORD PTR [esp+0x5c]` move function pointer to `eax`
 - `call eax` call function pointer
 
 6. `win` Function address is at `0x08048424`
