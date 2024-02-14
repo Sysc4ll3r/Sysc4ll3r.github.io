@@ -32,8 +32,8 @@ we can disassemble stack1 binary by `objdump`
 objdump -M intel -d /opt/protostar/bin/stack1 | grep main -A 32
 ```
 
-- `-M` stands for
-- `-d` stand for
+- `-M` stands for `--disassembler-options` we want `intel` syntax instead of `at&t`
+- `-d` stand for `--disassemble`
 - we grep `main` from the disassembled output because `main` as we know is the entrypoint for any `C` program and first function executed from it.
 
 objdump output:
