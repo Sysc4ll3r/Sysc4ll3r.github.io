@@ -6,6 +6,7 @@ tags: [protostar, binary-exploitation, stack4]
 ---
 
 # Conquering Stack3 at Protostar Machine
+
 Hello !  Today, I will solve [Stack4](https://exploit.education/protostar/stack-four/) challenge on [Protostar](https://exploit.education/protostar) machine .
 
 This time,our mission to hijack the execuation flow and make it flow as we want , Hackers Hah XD .. 
@@ -83,6 +84,9 @@ let,s run our solution redirect output of `~/fuzz.py` to our beautiful binary `s
 
 ![Stack4 Sloved](/assets/img/protostar/stack4-solved.png)
 
-and now function `win` called .. 
-We `win` !  .. CheckMate ;) 
-See You in `stack5` ;)
+and now function `win` called ..
+
+We `win` !  CheckMate ;) 
+
+
+See You in [Stack5](/posts/protostar_stack5) ;)
