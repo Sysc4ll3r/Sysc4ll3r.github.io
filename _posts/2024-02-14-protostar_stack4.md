@@ -5,7 +5,7 @@ categories: [binary-exploitation, protostar]
 tags: [protostar, binary-exploitation, stack4]
 ---
 
-# Conquering Stack3 at Protostar Machine
+# Conquering Stack4 at Protostar Machine
 
 Hello !  Today, I will solve [Stack4](https://exploit.education/protostar/stack-four/) challenge on [Protostar](https://exploit.education/protostar) machine .
 
