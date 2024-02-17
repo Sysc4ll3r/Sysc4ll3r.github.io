@@ -1,6 +1,6 @@
 ---
 title: Protostar - Stack 6
-date: 2024-02-15 12:28:15
+date: 2024-02-16 12:28:15
 categories: [binary-exploitation, protostar]
 tags: [protostar, binary-exploitation, stack6]
 ---
