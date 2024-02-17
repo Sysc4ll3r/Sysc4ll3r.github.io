@@ -313,6 +313,8 @@ so let,s hack this binary by hijacking `eip` then `ret2libc` ;D
 
 remmeber process mapping for our binary :)
 let,s see the shared libraries loaded
+
+
 ![Stack6 gdb](/assets/img/protostar/stack6-gdb-debug4.png)
 
 Hmmm  we found `libc.so.6` shared library had been loaded at address `0xb7e97000` so let,s get function to call it in `libc` :D
@@ -324,7 +326,8 @@ so i will first get the virtual address for `printf` and `exit` function first f
 so let,s get the `virtual addresses` of them  which `mapped` for our process 
 
 let,s calculate them , you can do it by this equation :) : 
-`function virtual address for process = `library virtual address for process + virtual address for function in shared library`
+`function virtual address for process = library virtual address for process + virtual address for function in shared library`
+
 ![Stack6 gdb](/assets/img/protostar/stack6-printf-exit-virtual-addresses.png)
 
 so we get them :D 
@@ -373,13 +376,19 @@ message_addr="\x7c\xf7\xff\xbf" # 0xbffff77c address for "Hello Iam Sysc4ll3r :)
 print(fuzz+ebp+eip+ret+message_addr)
 ```
 
-let,s see what happened :D  
+so first we overflow the stack and hijack `eip` and then `jump` to `printf` address
+and when `printf` finished execution it need address for `eip` to return  to so we create a return address for it pointed to `exit` function
+in `libc` but onesecond ? how `printf` will work with out arguments we need to pass string argument for it so we will pass a pointer for message `Hello Iam Sysc4ll3r :)` to make the program do the following `printf("Hello Iam Sysc4ll3r :)");exit(n)`
+
+so let,s do it and see what happened :D  
 
 ![Stack6 gdb](/assets/img/protostar/stack6-gdb-ret2libc-3.png)
 
 it,s works first get our path then execute `printf` twice after prompt and then exit that,s great :D
 
 <img alt="gif" src="https://media1.tenor.com/m/-P9K08bPxPUAAAAC/we-did-it.gif" width="350rem" height="100rem"/>
+
+
 so let,s convert this to a dirty exploit and get a root shell  ;)
 
 to do this we need to run a function that executes commands like `system`
