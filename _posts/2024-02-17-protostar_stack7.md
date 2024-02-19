@@ -1,6 +1,6 @@
 ---
 title: Protostar - Stack 7
-date: 2024-02-17 09:38:00
+date: 2024-02-18 09:38:00
 categories: [binary-exploitation, protostar]
 tags: [protostar, binary-exploitation, stack7]
 ---
