@@ -21,9 +21,12 @@ We Love `eip` hijacking hah ;). prepair your self and your terminal and let,s go
 
 ### Step 1: Explore Binary
 ![Stack4 Explore](/assets/img/protostar/stack4-explore.png)
+
 Again there is input ... Hmmm i think i know this function which prompt input XD .. , but i will not say :D .. you will know later :) .
+
 ### Step 2: Analysis
 ![Stack4 Analsis](/assets/img/protostar/stack4-analysis.png)
+
 1. Function Prologue:
    - `push ebp`: save the base pointer.
    - `mov ebp, esp`: set up  new base pointer.
@@ -61,12 +64,15 @@ print(fuzz)
 4. run binary with stdin from output of running `~/fuzz.py`
 5. check fuzz value at ebp register
 6. check fuzz value at eip register
+
 ![Stack4 Debug](/assets/img/protostar/stack4-gdb-debug.png)
 
 ![Stack4 Debug](/assets/img/protostar/stack4-gdb-debug2.png)
+
 - `ebp` value now is `0x53535353` which is hexadecimal respresntation for  fuzz value `SSSS` 
 
 ![Stack4 Debug](/assets/img/protostar/stack4-gdb-debug3.png)
+
 - and of course  `eip` value now is `0x54545454` which is hexadecimal respresntation for fuzz value `TTTT` 
 - well done now let,s craft our solution
 
