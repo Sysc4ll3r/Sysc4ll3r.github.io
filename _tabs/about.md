@@ -20,6 +20,7 @@ Feel free to reach out to me via [contact-me@sysc4ll3r.anonaddy.me](mailto:conta
 
 Connect with me on:
 
+- [Linkedin](https://www.linkedin.com/in/eslam-mohamed-moawed)
 - [Twitter](https://twitter.com/sysc4ll3r)
 - [GitHub](https://github.com/Sysc4ll3r)
 - [Discord](https://discord.com/users/sysc4ll3r)
