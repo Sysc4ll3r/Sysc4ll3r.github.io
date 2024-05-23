@@ -16,7 +16,7 @@ jmp _start
 ```
 ## Contact
 
-Feel free to reach out to me via [contact-me@sysc4ll3r.anonaddy.me](mailto:contact-me@sysc4ll3r.anonaddy.me) for collaboration, questions, or discussions related to cybersecurity and software security.
+Feel free to reach out to me via [sysc4ll3r@gmail.com](mailto:sysc4ll3r@gmail.com) for collaboration, questions, or discussions related to cybersecurity and software security.
 
 Connect with me on:
 
